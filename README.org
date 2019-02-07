@@ -1,0 +1,72 @@
+* [[https://orgmode.org/][Org Mode]]
+
+** 왜 Org ?
+
+- emacs를 메인 편집기로 사용하고 있다.
+- markdown의 사용에 한계를 느꼈다.
+  - 좀 더 기능이 많은 org로 눈길을 돌리기 시작.
+- 어떻게 다른 사람에게 알릴까?
+  - 대상 타겟을, emacs를 다룰 줄 알며, markdown을 알고 있는 사람을 타겟으로 하자.
+
+**  markup
+- ref: [[https://beorgapp.com/blog/org-vs-markdown/][org vs markdown]]
+
+#+BEGIN_SRC markdown
+  # Heading 1
+  ## Subheading 1.1
+  ### Sub-subheading 1.1.1
+
+  - The word **bold** will be in bold.
+  - The word *italics* will be in italics.
+  - ~~This has been struck out~~.
+  - [markdown-syntax](https://daringfireball.net/projects/markdown/syntax)
+#+END_SRC
+
+
+#+BEGIN_SRC org
+  ,* Headline 1
+  ,** Headline 1.1
+  ,*** Headline 1.1.1
+
+  - The word *bold* will be in bold.
+  - The word /italics/ will be in italics.
+  - +This has been struck out+.
+  - [[https://orgmode.org/manual/Markup.html][orgmode-markup]]
+#+END_SRC
+
+여기서 테이블에 대해 약을 팔자
+
+| x | y    |
+|---+------|
+| 1 | $1*2 |
+| 2 | 4    |
+#+TBLFM: $2=0
+#+TBLFM: $2=$1*2
+
+- C-c C-l org-insert-link
+- https://orgmode.org/manual/Field-and-range-formulas.html#Field-and-range-formulas
+- https://orgmode.org/manual/Editing-and-debugging-formulas.html
+- [https://www.youtube.com/watch?v=fTJVLJd_gz0][https://www.youtube.com/watch?v=nsGYet02bEk]
+- https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html
+
+
+
+* video
+[[https://www.youtube.com/watch?v=VTh_Xgt69-E][Hack Emacs - Org Mode in Depth: Markup and Links]]
+[[https://www.youtube.com/watch?v=nsGYet02bEk][Hack Emacs - Org Mode In Depth: Managing Structure]]
+
+
+** TASK
+- PLACE : ~:HOME:~, ~:COMPANY:~
+- STATUS :  ~TODO~, ~DOING~, ~DONE~
+
+** Flow
+dropbox/date.org - for sync
+seperate !
+
+** Reference
+- [[https://orgmode.org/org.html][Org Manual - HTML]]
+- [[https://orgmode.org/org.pdf][Org Manual - PDF]]
+- [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]]
+- [[https://github.com/yjwen/org-reveal][org-reveal]]
+- [[http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html][Taming Google Calendar with Org-Mode]]
