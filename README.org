@@ -1,3 +1,5 @@
+#+TITLE: Study.Org
+
 * [[https://orgmode.org/][Org Mode]]
 
 ** 왜 Org ?
@@ -8,73 +10,19 @@
 - 어떻게 다른 사람에게 알릴까?
   - 대상 타겟을, emacs를 다룰 줄 알며, markdown을 알고 있는 사람을 타겟으로 하자.
 
-**  markup
-- ref: [[https://beorgapp.com/blog/org-vs-markdown/][org vs markdown]]
-
-#+BEGIN_SRC markdown
-  # Heading 1
-  ## Subheading 1.1
-  ### Sub-subheading 1.1.1
-
-  - **bold**
-  - *italics*
-  - ~~strike~~
-  - __underline__
-
-  - link: [markdown-syntax](https://daringfireball.net/projects/markdown/syntax)
-
-  - `code`
-  - code
-  ``` python
-  def my_function():
-      print("Hello from a function")
-  ````
-
-  - quote
-  > quote
-#+END_SRC
-
-
-#+BEGIN_SRC org
-  ,* Headline 1
-  ,** Headline 1.1
-  ,*** Headline 1.1.1
-
-  - *bold*
-  - /italics/
-  - +strike+
-  - _underlined_
-  - =verbatim=
-
-  - link: [[https://orgmode.org/manual/Markup.html][orgmode-markup]]
-
-  - ~code~
-  - code
-  ,#+BEGIN_SRC python
-    def my_function():
-      print("Hello from a function")
-  ,#+END_SRC
-
-  - quote
-  ,#+BEGIN_QUOTE
-    quote
-  ,#+END_QUOTE
-#+END_SRC
-
-여기서 테이블에 대해 약을 팔자
-#+TBLNAME: test-table
-| x | y |
-|---+---|
-| 1 | 0 |
-| 2 | 0 |
-#+TBLFM: $2=0
-#+TBLFM: $2=$1*2
-
-- C-c C-l org-insert-link
-- https://orgmode.org/manual/Field-and-range-formulas.html#Field-and-range-formulas
-- https://orgmode.org/manual/Editing-and-debugging-formulas.html
-- [https://www.youtube.com/watch?v=fTJVLJd_gz0][https://www.youtube.com/watch?v=nsGYet02bEk]
-- https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html
+** 테크트리 [1/8]
+*** DONE [[./org_vs_markdown.org][마크다운이랑 비교해보기]]
+*** TODO 키 익숙해지기
+*** TODO 플러그인, 설정
+*** TODO 태그
+*** TODO 플로우
+*** TODO 배포
+**** html
+**** presentation
+**** [[https://github.com/yjwen/org-reveal][org-reveal]]
+**** org-publish
+*** TODO 소스코드 - https://orgmode.org/guide/Working-With-Source-Code.html#Working-With-Source-Code
+*** TODO 아젠다
 
 
 
@@ -95,5 +43,5 @@ seperate !
 - [[https://orgmode.org/org.html][Org Manual - HTML]]
 - [[https://orgmode.org/org.pdf][Org Manual - PDF]]
 - [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]]
-- [[https://github.com/yjwen/org-reveal][org-reveal]]
+
 - [[http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html][Taming Google Calendar with Org-Mode]]

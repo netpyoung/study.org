@@ -1,0 +1,80 @@
+*  org vs markdown
+
+
+#+BEGIN_SRC markdown
+  # Heading 1
+  ## Subheading 1.1
+  ### Sub-subheading 1.1.1
+
+  - **bold**
+  - *italics*
+  - ~~strike~~
+  - __underline__
+
+  - link: [markdown-syntax](https://daringfireball.net/projects/markdown/syntax)
+
+  - `code`
+  - code
+  ``` python
+  def my_function():
+      print("Hello from a function")
+  ````
+
+  - quote
+  > quote
+#+END_SRC
+
+
+#+BEGIN_SRC org
+  ,* Headline 1
+  ,** Headline 1.1
+  ,*** Headline 1.1.1
+
+  - *bold*
+  - /italics/
+  - +strike+
+  - _underlined_
+  - =verbatim=
+
+  - link: [[https://orgmode.org/manual/Markup.html][orgmode-markup]]
+
+  - ~code~
+  - code
+  ,#+BEGIN_SRC python
+    def my_function():
+      print("Hello from a function")
+  ,#+END_SRC
+
+  - quote
+  ,#+BEGIN_QUOTE
+    quote
+  ,#+END_QUOTE
+#+END_SRC
+
+| hook    | command           |
+|---------+-------------------|
+| C-c C-' | org-edit-src-code |
+| C-c C-l | org-insert-link   |
+
+- A line consisting of only dashes, and at least 5 of them, will be exported as a horizontal line.
+
+여기서 테이블에 대해 약을 팔자
+#+TBLNAME: test-table
+#+NAME: My Target
+| x | y |
+|---+---|
+| 1 | 0 |
+| 2 | 0 |
+#+TBLFM: $2=0
+#+TBLFM: $2=$1*2
+
+<<My Target>>
+
+** Ref:
+- [[https://beorgapp.com/blog/org-vs-markdown/][org vs markdown]]
+- https://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace
+- https://orgmode.org/manual/Paragraphs.html
+- https://orgmode.org/manual/Field-and-range-formulas.html#Field-and-range-formulas
+- https://orgmode.org/manual/Editing-and-debugging-formulas.html
+- [https://www.youtube.com/watch?v=fTJVLJd_gz0][https://www.youtube.com/watch?v=nsGYet02bEk]
+- https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html
