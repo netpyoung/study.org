@@ -68,9 +68,31 @@
 #+TBLFM: $2=0
 #+TBLFM: $2=$1*2
 
+#+BEGIN_QUOTE
+| a <tab>
+
+| a | b <tab>
+|   |
+
+| a | b |
+|   |   |
+
+| a | b |
+|-<tab> |   |
+
+
+| a | b |
+|---+---|
+|   |   |
+
+Alt+up
+Alt+down
+org-table-move...
+#+END_QUOTE
+
 <<My Target>>
 
-** Ref:
+* Ref:
 - [[https://beorgapp.com/blog/org-vs-markdown/][org vs markdown]]
 - https://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace
 - https://orgmode.org/manual/Paragraphs.html
@@ -78,3 +100,4 @@
 - https://orgmode.org/manual/Editing-and-debugging-formulas.html
 - [https://www.youtube.com/watch?v=fTJVLJd_gz0][https://www.youtube.com/watch?v=nsGYet02bEk]
 - https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html
+- [[https://www.youtube.com/watch?v=VTh_Xgt69-E][Hack Emacs - Org Mode in Depth: Markup and Links]]

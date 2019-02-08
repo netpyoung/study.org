@@ -1,0 +1,63 @@
+* bullet(~*~) 가지고 놀기
+
+| bind        | command                     |
+|-------------+-----------------------------|
+| <M-RET>     | org-meta-return             |
+| <backtab>   | org-shifttab                |
+
+* 상하좌우
+| bind        | command                     |
+|-------------+-----------------------------|
+| <M-right>   | org-metaright               |
+| <S-right>   | org-shiftright              |
+| <M-S-right> | org-shiftmetaright          |
+| <C-S-right> | org-shiftcontrolright       |
+
+* p / n / f / b
+| bind    | command                         |
+|---------+---------------------------------|
+| C-c C-p | org-previous-visible-headin     |
+| C-c C-n | org-next-visible-heading        |
+| C-c C-f | org-forward-heading-same-level  |
+| C-c C-b | org-backward-heading-same-level |
+
+
+** asdf
+** asfda
+
+*
+1. M-ret | org-shiftleft
+2.
+3.
+
+* C-c C-c ???
+https://orgmode.org/manual/The-very-busy-C_002dc-C_002dc-key.html
+
+
+* 체크박스와 프로그래스
+
+#+BEGIN_SRC org
+  ,*  [/]
+    - [ ] -> C-c - [X]
+    - [ ]
+    - [ ]
+
+  ,*  [1/3]
+    - [X]
+    - [ ]
+    - [ ]
+
+
+  ,*  [%]
+    - [ ]
+    - [ ] -> C-c - [X]
+    - [ ]
+
+  ,*  [33%]
+    - [ ]
+    - [X]
+    - [ ]
+#+END_SRC
+
+* Ref.
+- [[https://www.youtube.com/watch?v=nsGYet02bEk][Hack Emacs - Org Mode In Depth: Managing Structure]]

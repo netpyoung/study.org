@@ -1,0 +1,47 @@
+=C-c '=
+
+#+BEGIN_SRC emacs-lisp
+  (use-package org
+    :ensure t
+    :mode (("\\.org$" . org-mode))
+    :bind ("C-c C-'" . org-edit-src-code)
+    :config
+    (setq org-descriptive-links nil)
+    (setq org-src-tab-acts-natively t)
+    (setq org-confirm-babel-evaluate
+          '(lambda (lang body)
+             (pcase lang
+               ("emacs-lisp" nil)
+               ("clojure" nil)
+               (t t)))))
+
+  (use-package org-preview-html
+    :requires htmlize
+    :ensure t)
+
+  (use-package htmlize
+    :ensure t)
+
+  (use-package ob-async
+    ;; ref: https://github.com/astahlman/ob-async
+    :requires (org ob)
+    :ensure t)
+
+
+  (use-package ob-translate
+    ;; ref: https://github.com/krisajenkins/ob-translate
+    ;; #+BEGIN_SRC translate
+    ;; 안녕하세요
+    ;; #+END_SRC
+
+    ;; #+RESULTS:
+    ;; : Hi
+    :requires (org ob google-translate)
+    :ensure t)
+
+  ;; ref: https://github.com/zweifisch/ob-http
+
+  (use-package org-bullets
+    :ensure t
+    :hook (org-mode . org-bullets-mode))
+#+END_SRC
