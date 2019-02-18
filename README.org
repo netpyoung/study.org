@@ -25,7 +25,10 @@
    [[https://www.youtube.com/watch?v=QQSaDDVP__s][Org-mode Tutorial 4 - Schedules, Deadlines and Agendas!]]
 
 * Tags
+
 #+TAGS: CAT(c) | DOG(d)
+http://anitoy.pe.kr/emacs-org-mode-planning/?ckattempt=1
+
 
 * TODO / logbook
 - https://youtu.be/R4QSTDco_w8
