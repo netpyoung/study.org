@@ -1,0 +1,82 @@
+#+DATE: <2019-02-19 Tue>
+#+TITLE: hellworld
+#+AUTHOR: pyoung
+#+TODO: TODO(t) | DONE(d)
+#+TODO: REPORT(r) BUG(b) KNOWNCAUSE(k) | FIXED(f)
+#+TODO: | CANCELED(c)
+
+* 할일(TODO) 만들기
+* timestamp
+  <2019-02-15 Fri> - org-time-stamp : 엑티브
+  [2019-02-14 Thu] - org-time-stamp-inactive :  인엑티브
+S-up down  년월일
+S-left right 날짜
+
+* schedule
+
+  C-c C-s
+  SCHEDULED: <2019-02-14 Thu>
+
+  C-c C-d
+  DEADLINE: <2019-02-14 Thu>
+
+  C-c . : 날짜 추가 및 편집
+
+(+/-)y/m/w/d/h
+반복 알림
+DEADLINE: <2016-11-19 토 #{반복} #{알림}>
+
+** 결혼 기념일
+   DEADLINE: <2016-11-19 토 +1y -2w>
+ 위의 예제는 11월 19일 결혼 기념일이 매년 반복되고, 2주전 부터 아젠다뷰에서 보여주도록 하는 예제입니다.
+
+
+
+태그 입력하기
+
+헤드라인에서 C-c C-c 키를 입력하면 태그를 입력할 수 있는 미니버퍼가 생성되고, 여기에 태그를 입력하면 쉽게 태그를 추가할 수 있습니다.
+태그의 상속
+
+태그는 상속이 됩니다.
+
+#+BEGIN_SRC org
+  ,* Meeting with the French group                                        :work:
+  ,** Summary by Frank                                              :boss:notes:
+  ,*** TODO Prepare slides for him                                      :action:
+#+END_SRC
+
+위와 같이 태그가 있는 경우 마지막 헤드라인(Prepare slides for him)은 :work:boss:notes:action: 태그를 갖게 됩니다.
+
+또한 파일 단위로 태그를 달수도 있습니다.
+
+#+BEGIN_SRC org
+  ,#+FILETAGS: :Peter:Boss:Secret:
+#+END_SRC
+위의 텍스트를 파일에 기술하면 해당 파일의 모든 엔트리는 :Peter:Boss:Secret: 태그를 갖게 됩니다.
+
+
+* footnote
+- [[https://minhwan.kim/org-modereul-iyonghan-iljeong-gwanri/][Org Mode를 이용한 일정 관리]]
+- [[https://minhwan.kim/yuyonghan-munseopyeonjib-iljeonggwanri-dogu-org-mode/][Org Mode를 이용한 일정 관리]]
+
+  The Org homepage[fn:1] now looks a lot better than it used to.
+...
+    C-c C-x f : org-footnote-action
+C-u C-c C-x f : org-footnote-action
+    C-c C-c : org-footnote-goto-definition | org-footnote-goto-previous-reference
+
+
+* agenda
+  - https://orgmode.org/manual/Agenda-files.html
+org-agenda
+ - a : Agenda for current week or day
+ - m : Match a TAGS/PROP/TODO query
+ - t : List of all TODO entries
+ - T : Entries with special TODO kwd
+
+C-c [ org-agenda-file-to-front
+C-c ] org-remove-file
+
+ - https://superuser.com/questions/633746/loading-all-org-files-on-a-folder-to-agenda
+~C-h v org-agenda-files RET~
+~C-h v org-agenda-file-regexp RET~ - Its value is "\\`[^.].*\\.org\\'"
