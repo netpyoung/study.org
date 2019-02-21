@@ -2,6 +2,8 @@
 #+TITLE: Study.Org
 #+SEQ_TODO: TODO(t) | DONE (d)
 
+* TODO https://orgmode.org/manual/Easy-templates.html#Easy-templates
+
 * [[https://orgmode.org/][Org Mode]]
 - emacs를 메인 편집기로 사용하고 있다.
 - markdown의 사용에 한계를 느꼈다.
