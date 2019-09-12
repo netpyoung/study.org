@@ -43,9 +43,11 @@ dropbox/date.org - for sync
 seperate !
 
 * Reference
-- [[https://www.youtube.com/watch?v=sQS06Qjnkcc&list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König's OrgMode tutorial]]
-- [[https://orgmode.org/org.html][Org Manual - HTML]]
-- [[https://orgmode.org/org.pdf][Org Manual - PDF]]
-- [[https://orgmode.org/worg/orgcard.html][Org Reference Card]]
-- [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]]
-- [[http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html][Taming Google Calendar with Org-Mode]]
+  - [[https://www.youtube.com/watch?v=sQS06Qjnkcc&list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König's OrgMode tutorial]]
+  - [[https://orgmode.org/org.html][Org Manual - HTML]]
+  - [[https://orgmode.org/org.pdf][Org Manual - PDF]]
+  - [[https://orgmode.org/worg/orgcard.html][Org Reference Card]]
+  - [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][David O'Toole Org tutorial]]
+  - [[http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html][Taming Google Calendar with Org-Mode]]
+  - [[https://www.youtube.com/watch?v=GK3fij-D1G8][Org-mode, literate programming in Emacs]]
+  - [[https://www.youtube.com/watch?v=Bpmkeh4D98s][2018-11-14: Building a Second Brain in Org Mode - Tasshin Michael Fogleman]]
